@@ -14,11 +14,11 @@ class CustomTableCellThree: UITableViewCell {
     static let indentifier = "CustomTableCellThree"
 
     // MARK: - IBOutlets
-    
     @IBOutlet weak var WheatherView: UIView!
     @IBOutlet weak var TodayWheatherLabel: UILabel!
     
     // MARK: - Variables
+    
     
     // MARK: - Constants
     
@@ -27,6 +27,9 @@ class CustomTableCellThree: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        
+       
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -34,5 +37,10 @@ class CustomTableCellThree: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    func tableView() {
+    
+    }
     
 }
+
+

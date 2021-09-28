@@ -9,10 +9,20 @@ import UIKit
 
 class HeaderView: UIView {
 
+    // MARK: - Identifier
+    
+    static let identifier = "HeaderView"
+    
+    // MARK: - IBOutlets
+    
     @IBOutlet weak var contentViews: UIView!
     @IBOutlet weak var degreeLbl: UILabel!
     
-    static let identifier = "HeaderView"
+    // MARK: - Variables
+    
+    // MARK: - Constants
+    
+    // MARK: - View LifeCycle
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -23,6 +33,8 @@ class HeaderView: UIView {
         super .init(coder: aDecoder)
         loadNib()
     }
+    
+    // MARK: - Custom Functions
     
     func loadNib(){
         Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)

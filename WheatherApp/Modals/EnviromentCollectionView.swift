@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct EnviromentCollectionView {
+struct Enviroment {
     
     var sunrise: String
     var value : Double

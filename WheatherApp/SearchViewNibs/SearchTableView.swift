@@ -9,10 +9,17 @@ import UIKit
 
 class SearchTableView: UITableViewCell {
 
+    // MARK: - Identifier
+    
     static let indentifier = "SearchTableView"
-    //IBOulets
+    
+    // MARK: - IBOutlets
     
     @IBOutlet weak var cityName: UILabel!
+    
+    // MARK: - Constants
+    
+    // MARK: - View LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -24,6 +31,9 @@ class SearchTableView: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    // MARK: - Custom Functions
+    
     func prepare(_ SearchBar: SearchBar) {
         
         cityName.text = SearchBar.cityName

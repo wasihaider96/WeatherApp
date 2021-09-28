@@ -5,24 +5,28 @@ PODS:
   - GoogleMaps/Base (5.1.0)
   - GoogleMaps/Maps (5.1.0):
     - GoogleMaps/Base
+  - Kingfisher (7.0.0)
   - SwiftyJSON (5.0.1)
 
 DEPENDENCIES:
   - Alamofire
   - GoogleMaps
+  - Kingfisher
   - SwiftyJSON
 
 SPEC REPOS:
   trunk:
     - Alamofire
     - GoogleMaps
+    - Kingfisher
     - SwiftyJSON
 
 SPEC CHECKSUMS:
   Alamofire: e447a2774a40c996748296fa2c55112fdbbc42f9
   GoogleMaps: 086ae1dab659eaa7339bdb30fc88e2f44e7c597c
+  Kingfisher: 5efc54fec3980f92354898532e562cc17f31efb4
   SwiftyJSON: 2f33a42c6fbc52764d96f13368585094bfd8aa5e
 
-PODFILE CHECKSUM: e027255d19930090ab88572dda4a1ba5dd4f6b5b
+PODFILE CHECKSUM: 44300119b8ea1d42854d8633c613e3b5373c3ce0
 
 COCOAPODS: 1.11.0

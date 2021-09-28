@@ -1,5 +1,5 @@
 //
-//  FirstTableCell.swift
+//  WeatherRegardingTime.swift
 //  WheatherApp
 //
 //  Created by Apple on 13/09/2021.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct firstCollectionView {
+struct WeatherRegardingTime {
     var image: String
     var topTitle: String
     var bottomTitle: String

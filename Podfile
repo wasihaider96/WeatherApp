@@ -8,5 +8,6 @@ target 'WheatherApp' do
   # Pods for WheatherApp
     pod 'GoogleMaps'
     pod 'Alamofire'
-    pod 'SwiftyJSON'
+    pod 'SwiftyJSON' 
+    pod 'Kingfisher'
 end

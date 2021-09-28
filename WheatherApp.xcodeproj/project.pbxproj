@@ -17,8 +17,8 @@
 		1829401726EF2649002A0189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829401526EF2649002A0189 /* Main.storyboard */; };
 		1829401926EF264C002A0189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1829401826EF264C002A0189 /* Assets.xcassets */; };
 		1829401C26EF264C002A0189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829401A26EF264C002A0189 /* LaunchScreen.storyboard */; };
-		1829402626EF2C15002A0189 /* CustomTableCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402426EF2C15002A0189 /* CustomTableCellOne.swift */; };
-		1829402726EF2C15002A0189 /* CustomTableCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829402526EF2C15002A0189 /* CustomTableCellOne.xib */; };
+		1829402626EF2C15002A0189 /* TableCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402426EF2C15002A0189 /* TableCellOne.swift */; };
+		1829402726EF2C15002A0189 /* TableCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829402526EF2C15002A0189 /* TableCellOne.xib */; };
 		1829402A26EF2C59002A0189 /* CustomTableCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402826EF2C58002A0189 /* CustomTableCellTwo.swift */; };
 		1829402B26EF2C59002A0189 /* CustomTableCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829402926EF2C58002A0189 /* CustomTableCellTwo.xib */; };
 		1829402E26EF2C7A002A0189 /* CustomTableCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402C26EF2C7A002A0189 /* CustomTableCellThree.swift */; };
@@ -34,16 +34,21 @@
 		184E502826EF38C400E849ED /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E502726EF38C400E849ED /* UICollectionView + Extension.swift */; };
 		186C6E9A26F0D43C0009662D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C6E9926F0D43C0009662D /* HeaderView.xib */; };
 		186C6E9C26F0D47C0009662D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C6E9B26F0D47C0009662D /* HeaderView.swift */; };
+		189394EA27033C6A0095230E /* DayWiseData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189394E927033C6A0095230E /* DayWiseData.swift */; };
+		189394ED27033D390095230E /* DayWiseWeather.swift in Sources */ = {isa = PBXBuildFile; fileRef = 189394EB27033D390095230E /* DayWiseWeather.swift */; };
+		189394EE27033D390095230E /* DayWiseWeather.xib in Resources */ = {isa = PBXBuildFile; fileRef = 189394EC27033D390095230E /* DayWiseWeather.xib */; };
 		18A73D4626F4ABE0003A571F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4226F4ABDF003A571F /* Location.swift */; };
 		18A73D4726F4ABE0003A571F /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4326F4ABDF003A571F /* Parent.swift */; };
 		18A73D4826F4ABE0003A571F /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4426F4ABDF003A571F /* Sources.swift */; };
-		18A73D4B26F4AC0F003A571F /* weatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4A26F4AC0F003A571F /* weatherModel.swift */; };
+		18A73D4B26F4AC0F003A571F /* weatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4A26F4AC0F003A571F /* weatherData.swift */; };
 		18A73D4E26F4B336003A571F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4D26F4B336003A571F /* NetworkManager.swift */; };
 		18A73D5026F4B7C3003A571F /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4F26F4B7C3003A571F /* Search.swift */; };
 		18B8A6D826F362D100A39767 /* SearchBAr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6D726F362D100A39767 /* SearchBAr.swift */; };
 		18B8A6E226F36DED00A39767 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E026F36DED00A39767 /* SearchTableView.swift */; };
 		18B8A6E326F36DED00A39767 /* SearchTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8A6E126F36DED00A39767 /* SearchTableView.xib */; };
 		18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E426F36E7900A39767 /* SearchBar.swift */; };
+		18FF8A8E2702DCD900DB3554 /* WheatherForcastingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */; };
+		18FF8A902702DCE100DB3554 /* WheatherForcastingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */; };
 		C75BAD63D0BDF89BAD1DEF91 /* Pods_WheatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */; };
 /* End PBXBuildFile section */
 
@@ -60,8 +65,8 @@
 		1829401826EF264C002A0189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1829401B26EF264C002A0189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1829401D26EF264C002A0189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1829402426EF2C15002A0189 /* CustomTableCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellOne.swift; sourceTree = "<group>"; };
-		1829402526EF2C15002A0189 /* CustomTableCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCellOne.xib; sourceTree = "<group>"; };
+		1829402426EF2C15002A0189 /* TableCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableCellOne.swift; sourceTree = "<group>"; };
+		1829402526EF2C15002A0189 /* TableCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TableCellOne.xib; sourceTree = "<group>"; };
 		1829402826EF2C58002A0189 /* CustomTableCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellTwo.swift; sourceTree = "<group>"; };
 		1829402926EF2C58002A0189 /* CustomTableCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCellTwo.xib; sourceTree = "<group>"; };
 		1829402C26EF2C7A002A0189 /* CustomTableCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellThree.swift; sourceTree = "<group>"; };
@@ -77,16 +82,21 @@
 		184E502726EF38C400E849ED /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
 		186C6E9926F0D43C0009662D /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
 		186C6E9B26F0D47C0009662D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		189394E927033C6A0095230E /* DayWiseData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWiseData.swift; sourceTree = "<group>"; };
+		189394EB27033D390095230E /* DayWiseWeather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DayWiseWeather.swift; sourceTree = "<group>"; };
+		189394EC27033D390095230E /* DayWiseWeather.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DayWiseWeather.xib; sourceTree = "<group>"; };
 		18A73D4226F4ABDF003A571F /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		18A73D4326F4ABDF003A571F /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
 		18A73D4426F4ABDF003A571F /* Sources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
-		18A73D4A26F4AC0F003A571F /* weatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherModel.swift; sourceTree = "<group>"; };
+		18A73D4A26F4AC0F003A571F /* weatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherData.swift; sourceTree = "<group>"; };
 		18A73D4D26F4B336003A571F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		18A73D4F26F4B7C3003A571F /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
 		18B8A6D726F362D100A39767 /* SearchBAr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBAr.swift; sourceTree = "<group>"; };
 		18B8A6E026F36DED00A39767 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 		18B8A6E126F36DED00A39767 /* SearchTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableView.xib; sourceTree = "<group>"; };
 		18B8A6E426F36E7900A39767 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WheatherForcastingCell.xib; sourceTree = "<group>"; };
+		18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheatherForcastingCell.swift; sourceTree = "<group>"; };
 		207F46C8EB68FC3954CB6538 /* Pods-WheatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherApp.release.xcconfig"; path = "Target Support Files/Pods-WheatherApp/Pods-WheatherApp.release.xcconfig"; sourceTree = "<group>"; };
 		5DD07D4DBBEE6985E0827983 /* Pods-WheatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WheatherApp/Pods-WheatherApp.debug.xcconfig"; sourceTree = "<group>"; };
 		687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -150,14 +160,16 @@
 		1829402326EF2B98002A0189 /* TableCustomCell */ = {
 			isa = PBXGroup;
 			children = (
-				1829402426EF2C15002A0189 /* CustomTableCellOne.swift */,
-				1829402526EF2C15002A0189 /* CustomTableCellOne.xib */,
+				1829402426EF2C15002A0189 /* TableCellOne.swift */,
+				1829402526EF2C15002A0189 /* TableCellOne.xib */,
 				1829402826EF2C58002A0189 /* CustomTableCellTwo.swift */,
 				1829402926EF2C58002A0189 /* CustomTableCellTwo.xib */,
 				1829402C26EF2C7A002A0189 /* CustomTableCellThree.swift */,
 				1829402D26EF2C7A002A0189 /* CustomTableCellThree.xib */,
 				1843E38B26F06BA800BE2E09 /* SunriseSunsetTableCell.swift */,
 				1843E38C26F06BA800BE2E09 /* SunriseSunsetTableCell.xib */,
+				18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */,
+				18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */,
 			);
 			path = TableCustomCell;
 			sourceTree = "<group>";
@@ -167,10 +179,12 @@
 			children = (
 				1829403126EF2F42002A0189 /* CustomCollectionView.swift */,
 				1829403226EF2F42002A0189 /* CustomCollectionView.xib */,
-				186C6E9926F0D43C0009662D /* HeaderView.xib */,
 				186C6E9B26F0D47C0009662D /* HeaderView.swift */,
+				186C6E9926F0D43C0009662D /* HeaderView.xib */,
 				18165BEA26F2210100579817 /* aboutTempCollectionView.swift */,
 				18165BEB26F2210100579817 /* aboutTempCollectionView.xib */,
+				189394EB27033D390095230E /* DayWiseWeather.swift */,
+				189394EC27033D390095230E /* DayWiseWeather.xib */,
 			);
 			path = CustomCollectionView;
 			sourceTree = "<group>";
@@ -181,6 +195,7 @@
 				1829403626EF30AA002A0189 /* FirstTableCell.swift */,
 				18165BEE26F2276C00579817 /* EnviromentCollectionView.swift */,
 				18B8A6E426F36E7900A39767 /* SearchBar.swift */,
+				189394E927033C6A0095230E /* DayWiseData.swift */,
 			);
 			path = Modals;
 			sourceTree = "<group>";
@@ -224,7 +239,7 @@
 				18A73D4226F4ABDF003A571F /* Location.swift */,
 				18A73D4326F4ABDF003A571F /* Parent.swift */,
 				18A73D4426F4ABDF003A571F /* Sources.swift */,
-				18A73D4A26F4AC0F003A571F /* weatherModel.swift */,
+				18A73D4A26F4AC0F003A571F /* weatherData.swift */,
 				18A73D4F26F4B7C3003A571F /* Search.swift */,
 			);
 			path = DTO;
@@ -327,10 +342,12 @@
 				1829403426EF2F42002A0189 /* CustomCollectionView.xib in Resources */,
 				186C6E9A26F0D43C0009662D /* HeaderView.xib in Resources */,
 				18B8A6E326F36DED00A39767 /* SearchTableView.xib in Resources */,
-				1829402726EF2C15002A0189 /* CustomTableCellOne.xib in Resources */,
+				1829402726EF2C15002A0189 /* TableCellOne.xib in Resources */,
 				1829401C26EF264C002A0189 /* LaunchScreen.storyboard in Resources */,
+				189394EE27033D390095230E /* DayWiseWeather.xib in Resources */,
 				1829401926EF264C002A0189 /* Assets.xcassets in Resources */,
 				1829402B26EF2C59002A0189 /* CustomTableCellTwo.xib in Resources */,
+				18FF8A8E2702DCD900DB3554 /* WheatherForcastingCell.xib in Resources */,
 				1829402F26EF2C7A002A0189 /* CustomTableCellThree.xib in Resources */,
 				18165BED26F2210100579817 /* aboutTempCollectionView.xib in Resources */,
 				1843E38E26F06BA800BE2E09 /* SunriseSunsetTableCell.xib in Resources */,
@@ -407,13 +424,14 @@
 				18165BEC26F2210100579817 /* aboutTempCollectionView.swift in Sources */,
 				18B8A6E226F36DED00A39767 /* SearchTableView.swift in Sources */,
 				1843E38D26F06BA800BE2E09 /* SunriseSunsetTableCell.swift in Sources */,
-				1829402626EF2C15002A0189 /* CustomTableCellOne.swift in Sources */,
+				1829402626EF2C15002A0189 /* TableCellOne.swift in Sources */,
 				1829401426EF2649002A0189 /* ViewController.swift in Sources */,
 				184CBCB126F857260052848D /* wheatherViewModel.swift in Sources */,
 				1829402E26EF2C7A002A0189 /* CustomTableCellThree.swift in Sources */,
-				18A73D4B26F4AC0F003A571F /* weatherModel.swift in Sources */,
+				18A73D4B26F4AC0F003A571F /* weatherData.swift in Sources */,
 				1829401026EF2649002A0189 /* AppDelegate.swift in Sources */,
 				18A73D5026F4B7C3003A571F /* Search.swift in Sources */,
+				189394ED27033D390095230E /* DayWiseWeather.swift in Sources */,
 				184E502826EF38C400E849ED /* UICollectionView + Extension.swift in Sources */,
 				18A73D4726F4ABE0003A571F /* Parent.swift in Sources */,
 				1832FE6A26F327A00087EE0E /* AppSingelton.swift in Sources */,
@@ -425,11 +443,13 @@
 				1829402A26EF2C59002A0189 /* CustomTableCellTwo.swift in Sources */,
 				1832FE6826F325020087EE0E /* NavigationController.swift in Sources */,
 				18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */,
+				189394EA27033C6A0095230E /* DayWiseData.swift in Sources */,
 				18212E7B26F1C4A000FC7203 /* StoryBoard.swift in Sources */,
 				1829403326EF2F42002A0189 /* CustomCollectionView.swift in Sources */,
 				1829401226EF2649002A0189 /* SceneDelegate.swift in Sources */,
 				1829403726EF30AB002A0189 /* FirstTableCell.swift in Sources */,
 				18B8A6D826F362D100A39767 /* SearchBAr.swift in Sources */,
+				18FF8A902702DCE100DB3554 /* WheatherForcastingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -15,7 +15,7 @@ typealias LocationCompletionNetwork = ( _ success: Bool, _ message: String, _ lo
 
 // TypeAlias Location Weather handler
 
-typealias WeatherCompletionNetwork = ( _ success: Bool, _ message: String, _ weather: [weatherModel]?) -> Void
+typealias WeatherCompletionNetwork = ( _ success: Bool, _ message: String, _ weather: [WeatherDetail]?) -> Void
 
 class NetworkManager {
     
@@ -86,7 +86,7 @@ class NetworkManager {
             return
         }
         if WeathercheckStatus(code) {
-            let weather = try? JSONDecoder().decode([weatherModel].self, from: rawData)
+            let weather = try? JSONDecoder().decode([WeatherDetail].self, from: rawData)
             completion(true, json["detail"].stringValue, weather)
             
         } else {

@@ -11,7 +11,7 @@ class wheatherViewModel{
    
     
   weak var vc: ViewController?
-  var arrUsers = [weatherModel]()
+  var arrUsers = [WeatherDetail]()
      
   func weatherData() {
     URLSession.shared.dataTask(with: URL(string: "https://www.metaweather.com/api/location/2211177")!) { (data, reponse, error)
@@ -20,7 +20,7 @@ class wheatherViewModel{
             if error == nil {
                 if let data = data {
                     do{
-                        let userResponse = try JSONDecoder().decode(weatherModel.self, from: data)
+                        let userResponse = try JSONDecoder().decode(WeatherDetail.self, from: data)
                         print(userResponse)
                     } catch let err{
                         print(err.localizedDescription)

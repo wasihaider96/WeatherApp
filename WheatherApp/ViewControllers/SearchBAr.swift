@@ -16,25 +16,19 @@ class SearchBAr: UIViewController {
     
     // MARK: - Identifier
     
-    
     // MARK: - IBOutlets
-    
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var searchBar: UISearchBar!
     
     // MARK: - Variables
-    
-    var locationDataArray = [LocationData]()
-    var cityCell = [SearchBar]()
+    var locationData = [LocationData]()
+    var citySearch = [SearchBar]()
     var searching = false
-    var searchCountry = [Search]()
-    let countryNameArr = [Search]()
+
     
     // MARK: - Constants
     
-    
     // MARK: - View LifeCycle
-    
     var delegate: LocationDataPass!
     
     override func viewDidLoad() {
@@ -43,6 +37,7 @@ class SearchBAr: UIViewController {
         // Do any additional setup after loading the view.
         
         // Initialization code
+        
         searchBar.placeholder = "Search"
         self.searchBar.layer.cornerRadius = 15 // I've tried other numbers besides this too with no luck
         self.searchBar.clipsToBounds = true
@@ -60,7 +55,6 @@ class SearchBAr: UIViewController {
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = .clear
         
-        //cityData()
     }
     
     func GetLocationDetail() {
@@ -68,7 +62,7 @@ class SearchBAr: UIViewController {
         NetworkManager.shared.GetLocationDetail(requestURL) { success, message, location in
             if success {
                 if let location = location {
-                    self.locationDataArray = location
+                    self.locationData = location
                     
                     DispatchQueue.main.async {
                         self.tableView.reloadData()
@@ -89,7 +83,6 @@ class SearchBAr: UIViewController {
     }
     
     // MARK: - IBActions
-    
     @IBAction func cancelBtn(_ sender: UIButton) {
         
         navigationController?.popViewController(animated: true)
@@ -97,18 +90,17 @@ class SearchBAr: UIViewController {
     }
 }
 
-//Table View Extension
-
-extension SearchBAr: UITableViewDelegate, UITableViewDataSource  {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return locationDataArray.count
+    // MARK: - Table View Extension
+    extension SearchBAr: UITableViewDelegate, UITableViewDataSource  {
+     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return locationData.count
         
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: SearchTableView.indentifier, for: indexPath) as? SearchTableView else {
             return UITableViewCell()
         }
-        cell.textLabel?.text = "\(locationDataArray[indexPath.row].title ?? "")"
+        cell.textLabel?.text = "\(locationData[indexPath.row].title ?? "")"
         cell.backgroundColor = .clear
         
         return cell
@@ -121,16 +113,15 @@ extension SearchBAr: UITableViewDelegate, UITableViewDataSource  {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let locationData = locationDataArray[indexPath.row]
+        let locationData = locationData[indexPath.row]
         
         delegate.locationDataPass(locationData: locationData)
         navigationController?.popViewController(animated: true)
     }
 }
 
-//SearchBar View Extension
-
-extension SearchBAr: UISearchBarDelegate {
+  // MARK: - SearchBar View Extension
+  extension SearchBAr: UISearchBarDelegate {
     
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
         

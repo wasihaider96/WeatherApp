@@ -9,12 +9,22 @@ import UIKit
 
 class aboutTempCollectionView: UICollectionViewCell {
     
+    // MARK: - Identifier
+    
     static let indentifier = "aboutTempCollectionView"
+    
+    // MARK: - IBOutlets
     
     @IBOutlet weak var sunrise: UILabel!
     @IBOutlet weak var value: UILabel!
    
-    var weather = [weatherModel]()
+    // MARK: - Variables
+   
+    var weather = [WeatherDetail]()
+    
+    // MARK: - Constants
+    
+    // MARK: - View LifeCycle
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -22,7 +32,9 @@ class aboutTempCollectionView: UICollectionViewCell {
         
     }
     
-    func weatherDetail(_ EnviromentCollectionView: EnviromentCollectionView ){
+    // MARK: - Custom Functions
+    
+    func weatherDetail(_ EnviromentCollectionView: Enviroment ){
         sunrise.text = EnviromentCollectionView.sunrise
         value.text = String(format: "%.1f", EnviromentCollectionView.value)
     }

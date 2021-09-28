@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct weatherModel : Codable {
+struct WeatherDetail : Codable {
     let applicable_date : String?
     let created : String?
     let air_pressure : Double?

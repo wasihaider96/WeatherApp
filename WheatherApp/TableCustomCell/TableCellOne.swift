@@ -1,5 +1,5 @@
 //
-//  CustomTableCellOne.swift
+//  TableCellOne.swift
 //  WheatherApp
 //
 //  Created by Apple on 13/09/2021.
@@ -7,28 +7,22 @@
 
 import UIKit
 
-class CustomTableCellOne: UITableViewCell {
+class TableCellOne: UITableViewCell {
     
     // MARK: - Identifier
-    
-    static let indentifier = "CustomTableCellOne"
+    static let indentifier = "TableCellOne"
     
     // MARK: - IBOutlets
-    
     @IBOutlet weak var collectionView: UICollectionView!
     
     // MARK: - Variables
-    
-    var tableCell = [firstCollectionView]()
+    var tableCell = [WeatherRegardingTime]()
     
     // MARK: - Constants
     
     // MARK: - View LifeCycle
-    
     override func awakeFromNib() {
         super.awakeFromNib()
-        
-        wheatherData()
         
         collectionView.dataSource = self
         collectionView.delegate = self
@@ -38,26 +32,9 @@ class CustomTableCellOne: UITableViewCell {
         collectionView.clearBackground()
 
         // Initialization code
-    }
-    
-    // MARK: - Custom Functions
-    
-    func wheatherData() {
         
-        tableCell.append(firstCollectionView(image: "cloud.png", topTitle: "Now", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image:"sunny.png", topTitle: "1PM", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "2PM", bottomTitle: "32"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "3PM", bottomTitle: "32"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "4PM", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "5PM", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "6PM", bottomTitle: "29"))
-        tableCell.append(firstCollectionView(image: "sunset.png", topTitle: "6:11PM", bottomTitle: "Sunset"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "7PM", bottomTitle: "29"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "8PM", bottomTitle: "28"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "9PM", bottomTitle: "27"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "10PM", bottomTitle: "27"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "11PM", bottomTitle: "27"))
     }
+
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
@@ -67,12 +44,11 @@ class CustomTableCellOne: UITableViewCell {
     
 }
 
-extension CustomTableCellOne: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
+extension TableCellOne: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         return tableCell.count
     }
-    
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: CustomCollectionView.indentifier , for: indexPath ) as? CustomCollectionView else {

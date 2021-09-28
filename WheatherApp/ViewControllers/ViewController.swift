@@ -8,6 +8,7 @@
 import UIKit
 import Alamofire
 import SwiftyJSON
+import Kingfisher
 
 class ViewController: UIViewController, LocationDataPass {
     
@@ -16,7 +17,6 @@ class ViewController: UIViewController, LocationDataPass {
     // MARK: - Identifier
     
     // MARK: - IBOutlets
-    
     @IBOutlet weak var locationNameLbl: UILabel!
     @IBOutlet weak var topConstraints: NSLayoutConstraint!
     @IBOutlet weak var tableView: UITableView!
@@ -29,39 +29,33 @@ class ViewController: UIViewController, LocationDataPass {
     @IBOutlet weak var lowestTemp: UILabel!
     
     // MARK: - Variables
-    
     var locationSearch: LocationData?
-    var weatherModelData = [weatherModel]()
-    var tableCell = [firstCollectionView]()
+    var timeCollectionCell = [WeatherRegardingTime]()
     var isTopHide = false
     var isTableViewScroll = false
     var imageview : UIImageView? = nil
     private var isScrollUp = false
     
-    var defaultWeatherData = [weatherModel]()
+    var defaultWeatherData = [WeatherDetail]()
     var locatonModelData = [LocationData]()
-    var enviromentCEll = [EnviromentCollectionView]()
+    var enviromentCEll = [Enviroment]()
     
     // MARK: - Constants
     
     // MARK: - View LifeCycle
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
         
-        //API - Calling:
-        
+        // MARK: - API - Calling:
         DefaultLocationDetail()
         DefaultWeatherDetail()
-    
+        
+        // MARK: -  Initialization code
         wheatherData()
-        // Initialization code
         
-        // Collection View Inshilization
-        
+        // MARK: -  Collection View Inshilization
         collectionView.dataSource = self
         collectionView.delegate = self
         collectionView.register(UINib(nibName: CustomCollectionView.indentifier, bundle: nil),forCellWithReuseIdentifier: CustomCollectionView.indentifier)
@@ -70,8 +64,7 @@ class ViewController: UIViewController, LocationDataPass {
         collectionView.showsHorizontalScrollIndicator = false
         collectionView.clearBackground()
         
-        // Table View Inshilization
-        
+        // MARK: -  Table View Inshilization
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(UINib(nibName: CustomTableCellTwo.indentifier, bundle: nil), forCellReuseIdentifier: CustomTableCellTwo.indentifier)
@@ -85,8 +78,7 @@ class ViewController: UIViewController, LocationDataPass {
         
     }
     
-    // Functions
-        
+    // MARK: - Custom Functions
     func locationDataPass(locationData: LocationData) {
         
         locationNameLbl.text =  locationData.title!
@@ -95,8 +87,7 @@ class ViewController: UIViewController, LocationDataPass {
         self.locationSearch = locationData
         GetWeatherDetail()
     }
-    
-    //\(searchBar.text ?? "")
+ 
     
     func DefaultLocationDetail() {
         let requestURL = "https://www.metaweather.com/api/location/search/?query=karachi"
@@ -121,7 +112,6 @@ class ViewController: UIViewController, LocationDataPass {
                 if let weather = weather {
                     self.defaultWeatherData = weather
                     self.weatherDetail(extraDuplicateArr: self.defaultWeatherData)
-                    
                     self.defualtWeatherValue(defaultWeatherData: self.defaultWeatherData)
                     self.tableView.reloadData()
                 }
@@ -150,20 +140,20 @@ class ViewController: UIViewController, LocationDataPass {
         }
     }
 
-    func weatherDetail(extraDuplicateArr: [weatherModel]) {
+    func weatherDetail(extraDuplicateArr: [WeatherDetail]) {
     
         enviromentCEll.removeAll()
         
         if extraDuplicateArr.count > 0 {
             
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "SUNRISE", value: Double(extraDuplicateArr[0].min_temp!)))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "SUNSET", value: extraDuplicateArr[0].min_temp!))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "WIND", value: extraDuplicateArr[0].wind_speed!))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "HUMIDITY", value: extraDuplicateArr[0].humidity!))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "VISIBILITY", value: extraDuplicateArr[0].visibility!))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "PRESSURE", value: extraDuplicateArr[0].air_pressure!))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "DIRECTION", value: extraDuplicateArr[0].wind_direction!))
-        enviromentCEll.append(EnviromentCollectionView( sunrise: "PREDICTABILITY", value: extraDuplicateArr[0].predictability!))
+        enviromentCEll.append(Enviroment( sunrise: "SUNRISE", value: Double(extraDuplicateArr[0].min_temp!)))
+        enviromentCEll.append(Enviroment( sunrise: "SUNSET", value: extraDuplicateArr[0].min_temp!))
+        enviromentCEll.append(Enviroment( sunrise: "WIND", value: extraDuplicateArr[0].wind_speed!))
+        enviromentCEll.append(Enviroment( sunrise: "HUMIDITY", value: extraDuplicateArr[0].humidity!))
+        enviromentCEll.append(Enviroment( sunrise: "VISIBILITY", value: extraDuplicateArr[0].visibility!))
+        enviromentCEll.append(Enviroment( sunrise: "PRESSURE", value: extraDuplicateArr[0].air_pressure!))
+        enviromentCEll.append(Enviroment( sunrise: "DIRECTION", value: extraDuplicateArr[0].wind_direction!))
+        enviromentCEll.append(Enviroment( sunrise: "PREDICTABILITY", value: extraDuplicateArr[0].predictability!))
        
         }
     }
@@ -173,7 +163,7 @@ class ViewController: UIViewController, LocationDataPass {
         locationNameLbl.text = LocatonModelData[0].title
     }
     
-    func defualtWeatherValue(defaultWeatherData: [weatherModel]){
+    func defualtWeatherValue(defaultWeatherData: [WeatherDetail]){
         
         lowestTemp.text = String(format: "%.2f", defaultWeatherData[0].min_temp!)
         highestTemp.text = String(format: "%.2f", defaultWeatherData[0].max_temp!)
@@ -181,7 +171,7 @@ class ViewController: UIViewController, LocationDataPass {
         weatherState.text = defaultWeatherData[0].weather_state_name
     }
     
-    func assingningValue(weatherModelData: [weatherModel]) {
+    func assingningValue(weatherModelData: [WeatherDetail]) {
 
         lowestTemp.text = String(format: "%.2f", weatherModelData[0].min_temp!)
         highestTemp.text = String(format: "%.2f", weatherModelData[0].max_temp!)
@@ -189,23 +179,22 @@ class ViewController: UIViewController, LocationDataPass {
         weatherState.text = weatherModelData[0].weather_state_name
     }
 
-    //Data for Weather time Collection View
-    
+    //MARK: - Data for Weather time Collection View
     func wheatherData() {
-        
-        tableCell.append(firstCollectionView(image: "cloud.png", topTitle: "Now", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "1PM", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "2PM", bottomTitle: "32"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "3PM", bottomTitle: "32"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "4PM", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "5PM", bottomTitle: "31"))
-        tableCell.append(firstCollectionView(image: "sunny.png", topTitle: "6PM", bottomTitle: "29"))
-        tableCell.append(firstCollectionView(image: "sunset.png", topTitle: "6PM", bottomTitle: "Sunset"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "7PM", bottomTitle: "29"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "8PM", bottomTitle: "28"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "9PM", bottomTitle: "27"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "10PM", bottomTitle: "27"))
-        tableCell.append(firstCollectionView(image: "night-mode.png", topTitle: "11PM", bottomTitle: "27"))
+
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "Now", bottomTitle: "31"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunrise", topTitle: "1PM", bottomTitle: "31"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "2PM", bottomTitle: "32"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunset", topTitle: "3PM", bottomTitle: "32"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "4PM", bottomTitle: "31"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunrise", topTitle: "5PM", bottomTitle: "31"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "6PM", bottomTitle: "29"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunset", topTitle: "6PM", bottomTitle: "Sunset"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "7PM", bottomTitle: "29"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunset", topTitle: "8PM", bottomTitle: "28"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "9PM", bottomTitle: "27"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunrise", topTitle: "10PM", bottomTitle: "27"))
+        timeCollectionCell.append(WeatherRegardingTime(image: "sunny", topTitle: "11PM", bottomTitle: "27"))
     }
     
     func adjustTopView(_ height: CGFloat, _ topHide: Bool ) {
@@ -214,6 +203,7 @@ class ViewController: UIViewController, LocationDataPass {
         isTopHide = topHide
     }
     
+    // MARK: - IBAction
     @IBAction func searchBar(_ sender: UIButton) {
         
         let vc = self.storyboard?.instantiateViewController(identifier: "SearchBAr") as! SearchBAr
@@ -221,11 +211,9 @@ class ViewController: UIViewController, LocationDataPass {
         self.navigationController?.pushViewController( vc , animated: true)
         
     }
-    
 }
 
-//Table View Extension
-
+// MARK: - Table View Extension
 extension ViewController: UITableViewDelegate, UITableViewDataSource  {
      func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 4
@@ -236,6 +224,7 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource  {
                 return UITableViewCell()
             }
             cell.backgroundColor = .clear
+            
             return cell
         } else if indexPath.row == 1 {
             
@@ -251,8 +240,6 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource  {
                 return UITableViewCell()
             }
             cell.prepareCellFor(enviromentCEll)
-//            cell.defaultCell(self.defaultWeatherData)
-//            cell.prepareCell(self.weatherModelData)
             cell.backgroundColor = .clear
             
             return cell
@@ -374,7 +361,7 @@ extension ViewController: UIScrollViewDelegate {
 extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return tableCell.count
+        return timeCollectionCell.count
     }
     
     
@@ -383,7 +370,7 @@ extension ViewController: UICollectionViewDelegate, UICollectionViewDataSource, 
             return UICollectionViewCell()
         }
         
-        cell.prepare(tableCell[indexPath.row])
+        cell.prepare(timeCollectionCell[indexPath.row])
         cell.backgroundColor = .clear
         
         return cell

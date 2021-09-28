@@ -19,9 +19,9 @@ class SunriseSunsetTableCell: UITableViewCell {
     
     // MARK: - Variables
     
-    var enviromentCEll = [EnviromentCollectionView]()
-    var weather = [weatherModel]()
-    var extraDuplicateArr = [weatherModel]()
+    var enviromentCEll = [Enviroment]()
+    var weather = [WeatherDetail]()
+    var extraDuplicateArr = [WeatherDetail]()
     
     // MARK: - Constants
     
@@ -41,7 +41,7 @@ class SunriseSunsetTableCell: UITableViewCell {
     
     // MARK: - Custom Functions
     
-    func prepareCellFor(_ data: [EnviromentCollectionView])  {
+    func prepareCellFor(_ data: [Enviroment])  {
         enviromentCEll = data
         collectionView.reloadData()
     }
