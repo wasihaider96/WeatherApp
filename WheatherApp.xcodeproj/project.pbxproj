@@ -3,19 +3,55 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18165BEC26F2210100579817 /* aboutTempCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165BEA26F2210100579817 /* aboutTempCollectionView.swift */; };
+		18165BED26F2210100579817 /* aboutTempCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18165BEB26F2210100579817 /* aboutTempCollectionView.xib */; };
+		18165BEF26F2276C00579817 /* EnviromentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165BEE26F2276C00579817 /* EnviromentCollectionView.swift */; };
+		18212E7B26F1C4A000FC7203 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18212E7A26F1C4A000FC7203 /* StoryBoard.swift */; };
 		1829401026EF2649002A0189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829400F26EF2649002A0189 /* AppDelegate.swift */; };
 		1829401226EF2649002A0189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829401126EF2649002A0189 /* SceneDelegate.swift */; };
 		1829401426EF2649002A0189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829401326EF2649002A0189 /* ViewController.swift */; };
 		1829401726EF2649002A0189 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829401526EF2649002A0189 /* Main.storyboard */; };
 		1829401926EF264C002A0189 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1829401826EF264C002A0189 /* Assets.xcassets */; };
 		1829401C26EF264C002A0189 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1829401A26EF264C002A0189 /* LaunchScreen.storyboard */; };
+		1829402626EF2C15002A0189 /* CustomTableCellOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402426EF2C15002A0189 /* CustomTableCellOne.swift */; };
+		1829402726EF2C15002A0189 /* CustomTableCellOne.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829402526EF2C15002A0189 /* CustomTableCellOne.xib */; };
+		1829402A26EF2C59002A0189 /* CustomTableCellTwo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402826EF2C58002A0189 /* CustomTableCellTwo.swift */; };
+		1829402B26EF2C59002A0189 /* CustomTableCellTwo.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829402926EF2C58002A0189 /* CustomTableCellTwo.xib */; };
+		1829402E26EF2C7A002A0189 /* CustomTableCellThree.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829402C26EF2C7A002A0189 /* CustomTableCellThree.swift */; };
+		1829402F26EF2C7A002A0189 /* CustomTableCellThree.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829402D26EF2C7A002A0189 /* CustomTableCellThree.xib */; };
+		1829403326EF2F42002A0189 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829403126EF2F42002A0189 /* CustomCollectionView.swift */; };
+		1829403426EF2F42002A0189 /* CustomCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829403226EF2F42002A0189 /* CustomCollectionView.xib */; };
+		1829403726EF30AB002A0189 /* FirstTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829403626EF30AA002A0189 /* FirstTableCell.swift */; };
+		1832FE6826F325020087EE0E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832FE6726F325020087EE0E /* NavigationController.swift */; };
+		1832FE6A26F327A00087EE0E /* AppSingelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832FE6926F327A00087EE0E /* AppSingelton.swift */; };
+		1843E38D26F06BA800BE2E09 /* SunriseSunsetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E38B26F06BA800BE2E09 /* SunriseSunsetTableCell.swift */; };
+		1843E38E26F06BA800BE2E09 /* SunriseSunsetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1843E38C26F06BA800BE2E09 /* SunriseSunsetTableCell.xib */; };
+		184CBCB126F857260052848D /* wheatherViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184CBCB026F857260052848D /* wheatherViewModel.swift */; };
+		184E502826EF38C400E849ED /* UICollectionView + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 184E502726EF38C400E849ED /* UICollectionView + Extension.swift */; };
+		186C6E9A26F0D43C0009662D /* HeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 186C6E9926F0D43C0009662D /* HeaderView.xib */; };
+		186C6E9C26F0D47C0009662D /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186C6E9B26F0D47C0009662D /* HeaderView.swift */; };
+		18A73D4626F4ABE0003A571F /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4226F4ABDF003A571F /* Location.swift */; };
+		18A73D4726F4ABE0003A571F /* Parent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4326F4ABDF003A571F /* Parent.swift */; };
+		18A73D4826F4ABE0003A571F /* Sources.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4426F4ABDF003A571F /* Sources.swift */; };
+		18A73D4B26F4AC0F003A571F /* weatherModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4A26F4AC0F003A571F /* weatherModel.swift */; };
+		18A73D4E26F4B336003A571F /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4D26F4B336003A571F /* NetworkManager.swift */; };
+		18A73D5026F4B7C3003A571F /* Search.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18A73D4F26F4B7C3003A571F /* Search.swift */; };
+		18B8A6D826F362D100A39767 /* SearchBAr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6D726F362D100A39767 /* SearchBAr.swift */; };
+		18B8A6E226F36DED00A39767 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E026F36DED00A39767 /* SearchTableView.swift */; };
+		18B8A6E326F36DED00A39767 /* SearchTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8A6E126F36DED00A39767 /* SearchTableView.xib */; };
+		18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E426F36E7900A39767 /* SearchBar.swift */; };
+		C75BAD63D0BDF89BAD1DEF91 /* Pods_WheatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18165BEA26F2210100579817 /* aboutTempCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutTempCollectionView.swift; sourceTree = "<group>"; };
+		18165BEB26F2210100579817 /* aboutTempCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = aboutTempCollectionView.xib; sourceTree = "<group>"; };
+		18165BEE26F2276C00579817 /* EnviromentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentCollectionView.swift; sourceTree = "<group>"; };
+		18212E7A26F1C4A000FC7203 /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBoard.swift; path = ../../Travel/Travel/viewcontrollers/StoryBoard.swift; sourceTree = "<group>"; };
 		1829400C26EF2649002A0189 /* WheatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1829400F26EF2649002A0189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1829401126EF2649002A0189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +60,36 @@
 		1829401826EF264C002A0189 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1829401B26EF264C002A0189 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1829401D26EF264C002A0189 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1829402426EF2C15002A0189 /* CustomTableCellOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellOne.swift; sourceTree = "<group>"; };
+		1829402526EF2C15002A0189 /* CustomTableCellOne.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCellOne.xib; sourceTree = "<group>"; };
+		1829402826EF2C58002A0189 /* CustomTableCellTwo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellTwo.swift; sourceTree = "<group>"; };
+		1829402926EF2C58002A0189 /* CustomTableCellTwo.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCellTwo.xib; sourceTree = "<group>"; };
+		1829402C26EF2C7A002A0189 /* CustomTableCellThree.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTableCellThree.swift; sourceTree = "<group>"; };
+		1829402D26EF2C7A002A0189 /* CustomTableCellThree.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomTableCellThree.xib; sourceTree = "<group>"; };
+		1829403126EF2F42002A0189 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
+		1829403226EF2F42002A0189 /* CustomCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionView.xib; sourceTree = "<group>"; };
+		1829403626EF30AA002A0189 /* FirstTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableCell.swift; sourceTree = "<group>"; };
+		1832FE6726F325020087EE0E /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = ../../../Travel/Travel/Navigation/NavigationController.swift; sourceTree = "<group>"; };
+		1832FE6926F327A00087EE0E /* AppSingelton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSingelton.swift; sourceTree = "<group>"; };
+		1843E38B26F06BA800BE2E09 /* SunriseSunsetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetTableCell.swift; sourceTree = "<group>"; };
+		1843E38C26F06BA800BE2E09 /* SunriseSunsetTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SunriseSunsetTableCell.xib; sourceTree = "<group>"; };
+		184CBCB026F857260052848D /* wheatherViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = wheatherViewModel.swift; sourceTree = "<group>"; };
+		184E502726EF38C400E849ED /* UICollectionView + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView + Extension.swift"; sourceTree = "<group>"; };
+		186C6E9926F0D43C0009662D /* HeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HeaderView.xib; sourceTree = "<group>"; };
+		186C6E9B26F0D47C0009662D /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		18A73D4226F4ABDF003A571F /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
+		18A73D4326F4ABDF003A571F /* Parent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Parent.swift; sourceTree = "<group>"; };
+		18A73D4426F4ABDF003A571F /* Sources.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sources.swift; sourceTree = "<group>"; };
+		18A73D4A26F4AC0F003A571F /* weatherModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = weatherModel.swift; sourceTree = "<group>"; };
+		18A73D4D26F4B336003A571F /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		18A73D4F26F4B7C3003A571F /* Search.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Search.swift; sourceTree = "<group>"; };
+		18B8A6D726F362D100A39767 /* SearchBAr.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBAr.swift; sourceTree = "<group>"; };
+		18B8A6E026F36DED00A39767 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
+		18B8A6E126F36DED00A39767 /* SearchTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableView.xib; sourceTree = "<group>"; };
+		18B8A6E426F36E7900A39767 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		207F46C8EB68FC3954CB6538 /* Pods-WheatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherApp.release.xcconfig"; path = "Target Support Files/Pods-WheatherApp/Pods-WheatherApp.release.xcconfig"; sourceTree = "<group>"; };
+		5DD07D4DBBEE6985E0827983 /* Pods-WheatherApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherApp.debug.xcconfig"; path = "Target Support Files/Pods-WheatherApp/Pods-WheatherApp.debug.xcconfig"; sourceTree = "<group>"; };
+		687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WheatherApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +97,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C75BAD63D0BDF89BAD1DEF91 /* Pods_WheatherApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,8 +107,11 @@
 		1829400326EF2649002A0189 = {
 			isa = PBXGroup;
 			children = (
+				184CBCAF26F857010052848D /* ViewModel */,
 				1829400E26EF2649002A0189 /* WheatherApp */,
 				1829400D26EF2649002A0189 /* Products */,
+				A60E618431B7D290B1D5C80B /* Pods */,
+				76864EB4BC21A84C4C29DC58 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +126,142 @@
 		1829400E26EF2649002A0189 /* WheatherApp */ = {
 			isa = PBXGroup;
 			children = (
-				1829400F26EF2649002A0189 /* AppDelegate.swift */,
+				18A73D4C26F4B328003A571F /* Domain */,
+				18A73D4126F4ABD3003A571F /* DTO */,
+				1832FE6626F324D40087EE0E /* Navigation */,
+				1829403526EF3088002A0189 /* Modals */,
+				1829403026EF2F02002A0189 /* CustomCollectionView */,
+				1829402326EF2B98002A0189 /* TableCustomCell */,
+				18B8A6DF26F36D9400A39767 /* SearchViewNibs */,
+				1832FE6326F3204F0087EE0E /* ViewControllers */,
+				1832FE6926F327A00087EE0E /* AppSingelton.swift */,
+				18212E7A26F1C4A000FC7203 /* StoryBoard.swift */,
 				1829401126EF2649002A0189 /* SceneDelegate.swift */,
-				1829401326EF2649002A0189 /* ViewController.swift */,
+				1829400F26EF2649002A0189 /* AppDelegate.swift */,
 				1829401526EF2649002A0189 /* Main.storyboard */,
 				1829401826EF264C002A0189 /* Assets.xcassets */,
 				1829401A26EF264C002A0189 /* LaunchScreen.storyboard */,
 				1829401D26EF264C002A0189 /* Info.plist */,
+				184E502626EF38A400E849ED /* Extension */,
 			);
 			path = WheatherApp;
+			sourceTree = "<group>";
+		};
+		1829402326EF2B98002A0189 /* TableCustomCell */ = {
+			isa = PBXGroup;
+			children = (
+				1829402426EF2C15002A0189 /* CustomTableCellOne.swift */,
+				1829402526EF2C15002A0189 /* CustomTableCellOne.xib */,
+				1829402826EF2C58002A0189 /* CustomTableCellTwo.swift */,
+				1829402926EF2C58002A0189 /* CustomTableCellTwo.xib */,
+				1829402C26EF2C7A002A0189 /* CustomTableCellThree.swift */,
+				1829402D26EF2C7A002A0189 /* CustomTableCellThree.xib */,
+				1843E38B26F06BA800BE2E09 /* SunriseSunsetTableCell.swift */,
+				1843E38C26F06BA800BE2E09 /* SunriseSunsetTableCell.xib */,
+			);
+			path = TableCustomCell;
+			sourceTree = "<group>";
+		};
+		1829403026EF2F02002A0189 /* CustomCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1829403126EF2F42002A0189 /* CustomCollectionView.swift */,
+				1829403226EF2F42002A0189 /* CustomCollectionView.xib */,
+				186C6E9926F0D43C0009662D /* HeaderView.xib */,
+				186C6E9B26F0D47C0009662D /* HeaderView.swift */,
+				18165BEA26F2210100579817 /* aboutTempCollectionView.swift */,
+				18165BEB26F2210100579817 /* aboutTempCollectionView.xib */,
+			);
+			path = CustomCollectionView;
+			sourceTree = "<group>";
+		};
+		1829403526EF3088002A0189 /* Modals */ = {
+			isa = PBXGroup;
+			children = (
+				1829403626EF30AA002A0189 /* FirstTableCell.swift */,
+				18165BEE26F2276C00579817 /* EnviromentCollectionView.swift */,
+				18B8A6E426F36E7900A39767 /* SearchBar.swift */,
+			);
+			path = Modals;
+			sourceTree = "<group>";
+		};
+		1832FE6326F3204F0087EE0E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1829401326EF2649002A0189 /* ViewController.swift */,
+				18B8A6D726F362D100A39767 /* SearchBAr.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1832FE6626F324D40087EE0E /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				1832FE6726F325020087EE0E /* NavigationController.swift */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		184CBCAF26F857010052848D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				184CBCB026F857260052848D /* wheatherViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		184E502626EF38A400E849ED /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				184E502726EF38C400E849ED /* UICollectionView + Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		18A73D4126F4ABD3003A571F /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				18A73D4226F4ABDF003A571F /* Location.swift */,
+				18A73D4326F4ABDF003A571F /* Parent.swift */,
+				18A73D4426F4ABDF003A571F /* Sources.swift */,
+				18A73D4A26F4AC0F003A571F /* weatherModel.swift */,
+				18A73D4F26F4B7C3003A571F /* Search.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		18A73D4C26F4B328003A571F /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				18A73D4D26F4B336003A571F /* NetworkManager.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		18B8A6DF26F36D9400A39767 /* SearchViewNibs */ = {
+			isa = PBXGroup;
+			children = (
+				18B8A6E026F36DED00A39767 /* SearchTableView.swift */,
+				18B8A6E126F36DED00A39767 /* SearchTableView.xib */,
+			);
+			path = SearchViewNibs;
+			sourceTree = "<group>";
+		};
+		76864EB4BC21A84C4C29DC58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A60E618431B7D290B1D5C80B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5DD07D4DBBEE6985E0827983 /* Pods-WheatherApp.debug.xcconfig */,
+				207F46C8EB68FC3954CB6538 /* Pods-WheatherApp.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +271,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1829402026EF264C002A0189 /* Build configuration list for PBXNativeTarget "WheatherApp" */;
 			buildPhases = (
+				972C41B3339171FDB7E0DD56 /* [CP] Check Pods Manifest.lock */,
 				1829400826EF2649002A0189 /* Sources */,
 				1829400926EF2649002A0189 /* Frameworks */,
 				1829400A26EF2649002A0189 /* Resources */,
+				E4B42EF4724404EAC8A42001 /* [CP] Copy Pods Resources */,
+				4DFB766E988188BFE1052540 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,22 +324,112 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1829403426EF2F42002A0189 /* CustomCollectionView.xib in Resources */,
+				186C6E9A26F0D43C0009662D /* HeaderView.xib in Resources */,
+				18B8A6E326F36DED00A39767 /* SearchTableView.xib in Resources */,
+				1829402726EF2C15002A0189 /* CustomTableCellOne.xib in Resources */,
 				1829401C26EF264C002A0189 /* LaunchScreen.storyboard in Resources */,
 				1829401926EF264C002A0189 /* Assets.xcassets in Resources */,
+				1829402B26EF2C59002A0189 /* CustomTableCellTwo.xib in Resources */,
+				1829402F26EF2C7A002A0189 /* CustomTableCellThree.xib in Resources */,
+				18165BED26F2210100579817 /* aboutTempCollectionView.xib in Resources */,
+				1843E38E26F06BA800BE2E09 /* SunriseSunsetTableCell.xib in Resources */,
 				1829401726EF2649002A0189 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		4DFB766E988188BFE1052540 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheatherApp/Pods-WheatherApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheatherApp/Pods-WheatherApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WheatherApp/Pods-WheatherApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		972C41B3339171FDB7E0DD56 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-WheatherApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E4B42EF4724404EAC8A42001 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheatherApp/Pods-WheatherApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-WheatherApp/Pods-WheatherApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-WheatherApp/Pods-WheatherApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1829400826EF2649002A0189 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18165BEC26F2210100579817 /* aboutTempCollectionView.swift in Sources */,
+				18B8A6E226F36DED00A39767 /* SearchTableView.swift in Sources */,
+				1843E38D26F06BA800BE2E09 /* SunriseSunsetTableCell.swift in Sources */,
+				1829402626EF2C15002A0189 /* CustomTableCellOne.swift in Sources */,
 				1829401426EF2649002A0189 /* ViewController.swift in Sources */,
+				184CBCB126F857260052848D /* wheatherViewModel.swift in Sources */,
+				1829402E26EF2C7A002A0189 /* CustomTableCellThree.swift in Sources */,
+				18A73D4B26F4AC0F003A571F /* weatherModel.swift in Sources */,
 				1829401026EF2649002A0189 /* AppDelegate.swift in Sources */,
+				18A73D5026F4B7C3003A571F /* Search.swift in Sources */,
+				184E502826EF38C400E849ED /* UICollectionView + Extension.swift in Sources */,
+				18A73D4726F4ABE0003A571F /* Parent.swift in Sources */,
+				1832FE6A26F327A00087EE0E /* AppSingelton.swift in Sources */,
+				186C6E9C26F0D47C0009662D /* HeaderView.swift in Sources */,
+				18A73D4826F4ABE0003A571F /* Sources.swift in Sources */,
+				18165BEF26F2276C00579817 /* EnviromentCollectionView.swift in Sources */,
+				18A73D4626F4ABE0003A571F /* Location.swift in Sources */,
+				18A73D4E26F4B336003A571F /* NetworkManager.swift in Sources */,
+				1829402A26EF2C59002A0189 /* CustomTableCellTwo.swift in Sources */,
+				1832FE6826F325020087EE0E /* NavigationController.swift in Sources */,
+				18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */,
+				18212E7B26F1C4A000FC7203 /* StoryBoard.swift in Sources */,
+				1829403326EF2F42002A0189 /* CustomCollectionView.swift in Sources */,
 				1829401226EF2649002A0189 /* SceneDelegate.swift in Sources */,
+				1829403726EF30AB002A0189 /* FirstTableCell.swift in Sources */,
+				18B8A6D826F362D100A39767 /* SearchBAr.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -283,10 +573,12 @@
 		};
 		1829402126EF264C002A0189 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DD07D4DBBEE6985E0827983 /* Pods-WheatherApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BG56AWY496;
 				INFOPLIST_FILE = WheatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -301,10 +593,12 @@
 		};
 		1829402226EF264C002A0189 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 207F46C8EB68FC3954CB6538 /* Pods-WheatherApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BG56AWY496;
 				INFOPLIST_FILE = WheatherApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
