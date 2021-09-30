@@ -10,7 +10,6 @@
 		18165BEC26F2210100579817 /* aboutTempCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165BEA26F2210100579817 /* aboutTempCollectionView.swift */; };
 		18165BED26F2210100579817 /* aboutTempCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18165BEB26F2210100579817 /* aboutTempCollectionView.xib */; };
 		18165BEF26F2276C00579817 /* EnviromentCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18165BEE26F2276C00579817 /* EnviromentCollectionView.swift */; };
-		18212E7B26F1C4A000FC7203 /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18212E7A26F1C4A000FC7203 /* StoryBoard.swift */; };
 		1829401026EF2649002A0189 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829400F26EF2649002A0189 /* AppDelegate.swift */; };
 		1829401226EF2649002A0189 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829401126EF2649002A0189 /* SceneDelegate.swift */; };
 		1829401426EF2649002A0189 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829401326EF2649002A0189 /* ViewController.swift */; };
@@ -26,7 +25,6 @@
 		1829403326EF2F42002A0189 /* CustomCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829403126EF2F42002A0189 /* CustomCollectionView.swift */; };
 		1829403426EF2F42002A0189 /* CustomCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1829403226EF2F42002A0189 /* CustomCollectionView.xib */; };
 		1829403726EF30AB002A0189 /* FirstTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1829403626EF30AA002A0189 /* FirstTableCell.swift */; };
-		1832FE6826F325020087EE0E /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832FE6726F325020087EE0E /* NavigationController.swift */; };
 		1832FE6A26F327A00087EE0E /* AppSingelton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1832FE6926F327A00087EE0E /* AppSingelton.swift */; };
 		1843E38D26F06BA800BE2E09 /* SunriseSunsetTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1843E38B26F06BA800BE2E09 /* SunriseSunsetTableCell.swift */; };
 		1843E38E26F06BA800BE2E09 /* SunriseSunsetTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1843E38C26F06BA800BE2E09 /* SunriseSunsetTableCell.xib */; };
@@ -47,6 +45,7 @@
 		18B8A6E226F36DED00A39767 /* SearchTableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E026F36DED00A39767 /* SearchTableView.swift */; };
 		18B8A6E326F36DED00A39767 /* SearchTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8A6E126F36DED00A39767 /* SearchTableView.xib */; };
 		18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E426F36E7900A39767 /* SearchBar.swift */; };
+		18FC77A52705EEE400173E9E /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC77A42705EEE400173E9E /* StoryBoard.swift */; };
 		18FF8A8E2702DCD900DB3554 /* WheatherForcastingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */; };
 		18FF8A902702DCE100DB3554 /* WheatherForcastingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */; };
 		C75BAD63D0BDF89BAD1DEF91 /* Pods_WheatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */; };
@@ -56,7 +55,6 @@
 		18165BEA26F2210100579817 /* aboutTempCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = aboutTempCollectionView.swift; sourceTree = "<group>"; };
 		18165BEB26F2210100579817 /* aboutTempCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = aboutTempCollectionView.xib; sourceTree = "<group>"; };
 		18165BEE26F2276C00579817 /* EnviromentCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnviromentCollectionView.swift; sourceTree = "<group>"; };
-		18212E7A26F1C4A000FC7203 /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = StoryBoard.swift; path = ../../Travel/Travel/viewcontrollers/StoryBoard.swift; sourceTree = "<group>"; };
 		1829400C26EF2649002A0189 /* WheatherApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WheatherApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1829400F26EF2649002A0189 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1829401126EF2649002A0189 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +72,6 @@
 		1829403126EF2F42002A0189 /* CustomCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionView.swift; sourceTree = "<group>"; };
 		1829403226EF2F42002A0189 /* CustomCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionView.xib; sourceTree = "<group>"; };
 		1829403626EF30AA002A0189 /* FirstTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstTableCell.swift; sourceTree = "<group>"; };
-		1832FE6726F325020087EE0E /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = NavigationController.swift; path = ../../../Travel/Travel/Navigation/NavigationController.swift; sourceTree = "<group>"; };
 		1832FE6926F327A00087EE0E /* AppSingelton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSingelton.swift; sourceTree = "<group>"; };
 		1843E38B26F06BA800BE2E09 /* SunriseSunsetTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SunriseSunsetTableCell.swift; sourceTree = "<group>"; };
 		1843E38C26F06BA800BE2E09 /* SunriseSunsetTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SunriseSunsetTableCell.xib; sourceTree = "<group>"; };
@@ -95,6 +92,7 @@
 		18B8A6E026F36DED00A39767 /* SearchTableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchTableView.swift; sourceTree = "<group>"; };
 		18B8A6E126F36DED00A39767 /* SearchTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableView.xib; sourceTree = "<group>"; };
 		18B8A6E426F36E7900A39767 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
+		18FC77A42705EEE400173E9E /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
 		18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WheatherForcastingCell.xib; sourceTree = "<group>"; };
 		18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheatherForcastingCell.swift; sourceTree = "<group>"; };
 		207F46C8EB68FC3954CB6538 /* Pods-WheatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherApp.release.xcconfig"; path = "Target Support Files/Pods-WheatherApp/Pods-WheatherApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -138,15 +136,14 @@
 			children = (
 				18A73D4C26F4B328003A571F /* Domain */,
 				18A73D4126F4ABD3003A571F /* DTO */,
-				1832FE6626F324D40087EE0E /* Navigation */,
 				1829403526EF3088002A0189 /* Modals */,
 				1829403026EF2F02002A0189 /* CustomCollectionView */,
 				1829402326EF2B98002A0189 /* TableCustomCell */,
 				18B8A6DF26F36D9400A39767 /* SearchViewNibs */,
 				1832FE6326F3204F0087EE0E /* ViewControllers */,
 				1832FE6926F327A00087EE0E /* AppSingelton.swift */,
-				18212E7A26F1C4A000FC7203 /* StoryBoard.swift */,
 				1829401126EF2649002A0189 /* SceneDelegate.swift */,
+				18FC77A42705EEE400173E9E /* StoryBoard.swift */,
 				1829400F26EF2649002A0189 /* AppDelegate.swift */,
 				1829401526EF2649002A0189 /* Main.storyboard */,
 				1829401826EF264C002A0189 /* Assets.xcassets */,
@@ -207,14 +204,6 @@
 				18B8A6D726F362D100A39767 /* SearchBAr.swift */,
 			);
 			path = ViewControllers;
-			sourceTree = "<group>";
-		};
-		1832FE6626F324D40087EE0E /* Navigation */ = {
-			isa = PBXGroup;
-			children = (
-				1832FE6726F325020087EE0E /* NavigationController.swift */,
-			);
-			path = Navigation;
 			sourceTree = "<group>";
 		};
 		184CBCAF26F857010052848D /* ViewModel */ = {
@@ -433,6 +422,7 @@
 				18A73D5026F4B7C3003A571F /* Search.swift in Sources */,
 				189394ED27033D390095230E /* DayWiseWeather.swift in Sources */,
 				184E502826EF38C400E849ED /* UICollectionView + Extension.swift in Sources */,
+				18FC77A52705EEE400173E9E /* StoryBoard.swift in Sources */,
 				18A73D4726F4ABE0003A571F /* Parent.swift in Sources */,
 				1832FE6A26F327A00087EE0E /* AppSingelton.swift in Sources */,
 				186C6E9C26F0D47C0009662D /* HeaderView.swift in Sources */,
@@ -441,10 +431,8 @@
 				18A73D4626F4ABE0003A571F /* Location.swift in Sources */,
 				18A73D4E26F4B336003A571F /* NetworkManager.swift in Sources */,
 				1829402A26EF2C59002A0189 /* CustomTableCellTwo.swift in Sources */,
-				1832FE6826F325020087EE0E /* NavigationController.swift in Sources */,
 				18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */,
 				189394EA27033C6A0095230E /* DayWiseData.swift in Sources */,
-				18212E7B26F1C4A000FC7203 /* StoryBoard.swift in Sources */,
 				1829403326EF2F42002A0189 /* CustomCollectionView.swift in Sources */,
 				1829401226EF2649002A0189 /* SceneDelegate.swift in Sources */,
 				1829403726EF30AB002A0189 /* FirstTableCell.swift in Sources */,
