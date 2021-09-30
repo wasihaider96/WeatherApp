@@ -25,8 +25,7 @@ class CustomTableCellTwo: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
-        
-        tableIntializer()
+    
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -36,6 +35,7 @@ class CustomTableCellTwo: UITableViewCell {
         tableView.showsHorizontalScrollIndicator = false
         tableView.showsVerticalScrollIndicator = false
         tableView.backgroundColor = .clear
+        self.tableView.separatorColor = .clear
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -43,12 +43,11 @@ class CustomTableCellTwo: UITableViewCell {
         
         // Configure the view for the selected state
     }
-    
-    func tableIntializer() {
+    func prepareCell(_ data: [DayWiseData])  {
         
-        
+        tableViewCell = data
+        tableView.reloadData()
     }
-    
 }
 
 extension CustomTableCellTwo: UITableViewDelegate, UITableViewDataSource {
@@ -60,7 +59,7 @@ extension CustomTableCellTwo: UITableViewDelegate, UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: DayWiseWeather.indentifier, for: indexPath) as? DayWiseWeather else {
             return UITableViewCell()
         }
-        cell.prepare(tableViewCell[indexPath.row])
+        cell.prepareCell(tableViewCell[indexPath.row])
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -68,6 +67,6 @@ extension CustomTableCellTwo: UITableViewDelegate, UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 100.0
+        return 30.0
     }
 }

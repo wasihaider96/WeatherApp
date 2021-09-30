@@ -10,12 +10,19 @@ import UIKit
 class DayWiseWeather: UITableViewCell {
 
     // MARK: - Identifier
-    
     static let indentifier = "DayWiseWeather"
+    
+    // MARK: - IBoulets
+    @IBOutlet weak var dayLabel: UILabel!
+    @IBOutlet weak var lowTempLbl: UILabel!
+    @IBOutlet weak var highTempLbl: UILabel!
+    @IBOutlet weak var weatherImg: UIImageView!
     
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        //weatherImg.kf.setImage(with: )
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -24,7 +31,12 @@ class DayWiseWeather: UITableViewCell {
         // Configure the view for the selected state
     }
     
-    func prepare(_ tableInfo: DayWiseData) {
+    func prepareCell(_ tableInfo: DayWiseData) {
         
+        
+        dayLabel.text = tableInfo.dayTitle
+        weatherImg.setImage(tableInfo.image)
+        highTempLbl.text = tableInfo.highTempTitle
+        lowTempLbl.text = tableInfo.lowTempTitle
     }
 }

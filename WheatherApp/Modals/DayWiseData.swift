@@ -7,7 +7,9 @@
 
 import Foundation
 struct DayWiseData {
-//    var image: String
-//    var topTitle: String
-//    var bottomTitle: String
+    
+    var dayTitle: String
+    var image: String
+    var highTempTitle: String
+    var lowTempTitle: String
 }

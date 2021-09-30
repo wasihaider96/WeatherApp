@@ -46,6 +46,7 @@
 		18B8A6E326F36DED00A39767 /* SearchTableView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18B8A6E126F36DED00A39767 /* SearchTableView.xib */; };
 		18B8A6E526F36E7900A39767 /* SearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B8A6E426F36E7900A39767 /* SearchBar.swift */; };
 		18FC77A52705EEE400173E9E /* StoryBoard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC77A42705EEE400173E9E /* StoryBoard.swift */; };
+		18FC77A72705F0CC00173E9E /* Uiimage + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FC77A62705F0CC00173E9E /* Uiimage + Extension.swift */; };
 		18FF8A8E2702DCD900DB3554 /* WheatherForcastingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */; };
 		18FF8A902702DCE100DB3554 /* WheatherForcastingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */; };
 		C75BAD63D0BDF89BAD1DEF91 /* Pods_WheatherApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 687CFCC9CB08D684CED1C271 /* Pods_WheatherApp.framework */; };
@@ -93,6 +94,7 @@
 		18B8A6E126F36DED00A39767 /* SearchTableView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SearchTableView.xib; sourceTree = "<group>"; };
 		18B8A6E426F36E7900A39767 /* SearchBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBar.swift; sourceTree = "<group>"; };
 		18FC77A42705EEE400173E9E /* StoryBoard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoard.swift; sourceTree = "<group>"; };
+		18FC77A62705F0CC00173E9E /* Uiimage + Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Uiimage + Extension.swift"; sourceTree = "<group>"; };
 		18FF8A8D2702DCD900DB3554 /* WheatherForcastingCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = WheatherForcastingCell.xib; sourceTree = "<group>"; };
 		18FF8A8F2702DCE100DB3554 /* WheatherForcastingCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WheatherForcastingCell.swift; sourceTree = "<group>"; };
 		207F46C8EB68FC3954CB6538 /* Pods-WheatherApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WheatherApp.release.xcconfig"; path = "Target Support Files/Pods-WheatherApp/Pods-WheatherApp.release.xcconfig"; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		184E502626EF38A400E849ED /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				18FC77A62705F0CC00173E9E /* Uiimage + Extension.swift */,
 				184E502726EF38C400E849ED /* UICollectionView + Extension.swift */,
 			);
 			path = Extension;
@@ -417,6 +420,7 @@
 				1829401426EF2649002A0189 /* ViewController.swift in Sources */,
 				184CBCB126F857260052848D /* wheatherViewModel.swift in Sources */,
 				1829402E26EF2C7A002A0189 /* CustomTableCellThree.swift in Sources */,
+				18FC77A72705F0CC00173E9E /* Uiimage + Extension.swift in Sources */,
 				18A73D4B26F4AC0F003A571F /* weatherData.swift in Sources */,
 				1829401026EF2649002A0189 /* AppDelegate.swift in Sources */,
 				18A73D5026F4B7C3003A571F /* Search.swift in Sources */,
