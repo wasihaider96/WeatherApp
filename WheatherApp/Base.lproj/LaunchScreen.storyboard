@@ -4,7 +4,6 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -16,35 +15,27 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="CDS-J3-e2b">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="WEATHER FORCASTING" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiR-Bi-Kqt">
-                                <rect key="frame" x="52" y="144" width="310" height="24"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dark Sky" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PiR-Bi-Kqt">
+                                <rect key="frame" x="90" y="259" width="181" height="101.5"/>
+                                <fontDescription key="fontDescription" name="Zapfino" family="Zapfino" pointSize="30"/>
                                 <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cloud" translatesAutoresizingMaskIntoConstraints="NO" id="Wkm-fB-Xek">
-                                <rect key="frame" x="157" y="268.5" width="100" height="100"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="launchscreenimage" translatesAutoresizingMaskIntoConstraints="NO" id="iV1-zB-Z71">
+                                <rect key="frame" x="130" y="384" width="100" height="100"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="8HT-3q-tcg"/>
-                                    <constraint firstAttribute="width" constant="100" id="pV1-fJ-Yp2"/>
+                                    <constraint firstAttribute="height" constant="100" id="peT-Ls-L52"/>
+                                    <constraint firstAttribute="width" constant="100" id="ptg-tj-gfv"/>
                                 </constraints>
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PiR-Bi-Kqt" secondAttribute="trailing" constant="52" id="DDR-mB-lhj"/>
-                            <constraint firstItem="Wkm-fB-Xek" firstAttribute="centerX" secondItem="PiR-Bi-Kqt" secondAttribute="centerX" id="MtQ-uu-8fY"/>
-                            <constraint firstItem="PiR-Bi-Kqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="52" id="X9H-31-Ip8"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CDS-J3-e2b" secondAttribute="trailing" id="XqR-ZD-d5f"/>
-                            <constraint firstItem="CDS-J3-e2b" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hRq-xv-AJk"/>
-                            <constraint firstItem="Wkm-fB-Xek" firstAttribute="top" secondItem="PiR-Bi-Kqt" secondAttribute="bottom" constant="100.5" id="pdD-iM-rNT"/>
-                            <constraint firstItem="PiR-Bi-Kqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="qhr-3d-HbB"/>
-                            <constraint firstItem="CDS-J3-e2b" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="rYC-Ta-MAL"/>
-                            <constraint firstAttribute="bottom" secondItem="CDS-J3-e2b" secondAttribute="bottom" id="u4v-O1-hj0"/>
+                            <constraint firstItem="iV1-zB-Z71" firstAttribute="top" secondItem="PiR-Bi-Kqt" secondAttribute="bottom" constant="23.5" id="KmC-n0-gVW"/>
+                            <constraint firstItem="PiR-Bi-Kqt" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="215" id="VJP-2s-QFc"/>
+                            <constraint firstItem="iV1-zB-Z71" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="130" id="hyr-pb-IUu"/>
+                            <constraint firstItem="PiR-Bi-Kqt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="90" id="mgl-dJ-X7t"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -54,10 +45,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1200" height="1200"/>
-        <image name="cloud" width="512" height="512"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="launchscreenimage" width="1025" height="1025"/>
     </resources>
 </document>

@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0RL-Zc-SRD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="kSk-Ne-i9e">
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="kSk-Ne-i9e">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </imageView>
@@ -228,7 +228,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" red="0.7954897366" green="0.85474418870000002" blue="0.84671510940000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.0" green="0.28201243279999999" blue="0.47719162700000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="87O-Gs-vbg" firstAttribute="leading" secondItem="IxP-Ia-1uM" secondAttribute="leading" constant="45" id="0k1-Dg-v4V"/>
                                     <constraint firstItem="VI4-VF-TBj" firstAttribute="top" secondItem="87O-Gs-vbg" secondAttribute="bottom" constant="20" id="FOb-zb-kJS"/>
@@ -287,7 +287,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="background" width="1200" height="1200"/>
+        <image name="bg" width="5472" height="3648"/>
         <image name="icons8-search-240" width="240" height="240"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

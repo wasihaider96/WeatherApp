@@ -4,21 +4,20 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="58" id="KGk-i7-Jjw" customClass="DayWiseWeather" customModule="WheatherApp" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="351" height="58"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="55" id="KGk-i7-Jjw" customClass="DayWiseWeather" customModule="WheatherApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="445" height="55"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" restorationIdentifier="DayWiseWeather" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM" customClass="DayWiseWeather" customModule="WheatherApp" customModuleProvider="target">
-                <rect key="frame" x="0.0" y="0.0" width="351" height="58"/>
+                <rect key="frame" x="0.0" y="0.0" width="445" height="55"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fug-xs-lGh">
-                        <rect key="frame" x="0.0" y="0.0" width="351" height="58"/>
+                        <rect key="frame" x="0.0" y="0.0" width="445" height="55"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wednesday" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nMG-Uc-ZIt">
                                 <rect key="frame" x="20" y="10" width="80" height="18"/>
@@ -27,42 +26,51 @@
                                     <constraint firstAttribute="width" constant="80" id="Ujh-KG-q8V"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="15"/>
-                                <nil key="textColor"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="dIr-va-xcI">
-                                <rect key="frame" x="160" y="10" width="20" height="20"/>
+                                <rect key="frame" x="180" y="10" width="20" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="20" id="FBU-wM-S9n"/>
                                     <constraint firstAttribute="width" constant="20" id="dNE-ae-2xh"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5eX-00-X5S">
-                                <rect key="frame" x="240" y="10" width="20.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="290" y="10" width="20.5" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="Hug-wG-wez"/>
+                                    <constraint firstAttribute="width" constant="20.5" id="XQp-TO-dLg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="33" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4JT-aL-f50">
-                                <rect key="frame" x="290.5" y="10" width="20.5" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <rect key="frame" x="335.5" y="10" width="21" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="21" id="71g-bd-WCt"/>
+                                    <constraint firstAttribute="height" constant="21" id="YbA-ag-IFb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="5eX-00-X5S" firstAttribute="leading" secondItem="dIr-va-xcI" secondAttribute="trailing" constant="60" id="EiL-Xk-nIF"/>
-                            <constraint firstItem="dIr-va-xcI" firstAttribute="leading" secondItem="nMG-Uc-ZIt" secondAttribute="trailing" constant="60" id="H4w-Zt-Emu"/>
+                            <constraint firstItem="5eX-00-X5S" firstAttribute="leading" secondItem="dIr-va-xcI" secondAttribute="trailing" constant="90" id="EiL-Xk-nIF"/>
+                            <constraint firstItem="dIr-va-xcI" firstAttribute="leading" secondItem="nMG-Uc-ZIt" secondAttribute="trailing" constant="80" id="H4w-Zt-Emu"/>
                             <constraint firstItem="4JT-aL-f50" firstAttribute="top" secondItem="fug-xs-lGh" secondAttribute="top" constant="10" id="W0V-KR-Uuk"/>
                             <constraint firstItem="dIr-va-xcI" firstAttribute="top" secondItem="fug-xs-lGh" secondAttribute="top" constant="10" id="Wha-Ng-1PZ"/>
                             <constraint firstItem="nMG-Uc-ZIt" firstAttribute="top" secondItem="fug-xs-lGh" secondAttribute="top" constant="10" id="ZL2-L2-bxk"/>
-                            <constraint firstItem="4JT-aL-f50" firstAttribute="leading" secondItem="5eX-00-X5S" secondAttribute="trailing" constant="30" id="hvv-qI-GiT"/>
+                            <constraint firstItem="4JT-aL-f50" firstAttribute="leading" secondItem="5eX-00-X5S" secondAttribute="trailing" constant="25" id="hvv-qI-GiT"/>
                             <constraint firstItem="nMG-Uc-ZIt" firstAttribute="leading" secondItem="fug-xs-lGh" secondAttribute="leading" constant="20" id="rs1-Da-O98"/>
                             <constraint firstItem="5eX-00-X5S" firstAttribute="top" secondItem="fug-xs-lGh" secondAttribute="top" constant="10" id="wNF-oK-SMS"/>
                         </constraints>
                     </view>
                 </subviews>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                 <constraints>
                     <constraint firstAttribute="trailing" secondItem="fug-xs-lGh" secondAttribute="trailing" id="cXf-63-Ac1"/>
                     <constraint firstItem="fug-xs-lGh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="gj3-Mv-urd"/>
@@ -71,18 +79,14 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <connections>
                 <outlet property="dayLabel" destination="nMG-Uc-ZIt" id="g2j-XI-lds"/>
                 <outlet property="highTempLbl" destination="4JT-aL-f50" id="aSC-Ek-OZp"/>
                 <outlet property="lowTempLbl" destination="5eX-00-X5S" id="MDQ-js-IGK"/>
                 <outlet property="weatherImg" destination="dIr-va-xcI" id="pub-nv-vZH"/>
             </connections>
-            <point key="canvasLocation" x="-106.5217391304348" y="-14.0625"/>
+            <point key="canvasLocation" x="-38.405797101449281" y="-15.066964285714285"/>
         </tableViewCell>
     </objects>
-    <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-    </resources>
 </document>
